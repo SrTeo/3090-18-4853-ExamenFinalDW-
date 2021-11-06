@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 5</title>
+    <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <form action="auxiliares/Proceso.php" method="POST">
+            <img src="https://umg.edu.gt/assets/umg.png" width="125" alt="">
+            <br>
+            <input type="text"  placeholder="Usuario" name="usuario" >
+            <br>
+            <input type="text"  placeholder="Contraseña" name="contraseña" >
+            <br>
+            <input type="text"  placeholder="Nombre" name="nombre" >
+            <br>
+            <input type="email"  placeholder="Correo" name="correo" >
+            <br>
+            <p>SELEECIONE TIPO DE USUARIO:</p>
+            <select class="form-control" name="TipoUsuario">
+                <option>Adminitrador</option>
+                <option>Gerente</option>
+                <option>Cliente</option>
+              </select>
+              <p>SELECCIONE QUE DESEA HACER:</p>
+              <select class="form-control" name="opcion">
+                <option>Registrar</option>
+                <option>Iniciar Sesion</option>
+                <option>Modificar Contraseña</option>
+                <option>Mostrar informacion</option>
+                
+              </select>
+              <br> <BR></BR>
+
+              <button class="btn btn-submit" type="submit">PROCEDER</button>
+        
+        </form>
+    </div>
+
+</body>
+</html>
